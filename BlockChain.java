@@ -146,6 +146,7 @@ public class BlockChain implements BlockChainInterface{
    * string representation of each of its blocks, earliest to latest, one 
    * per line.
    */
+  @Override
   public String toString(){
     String ret = "";
     for(Node<Block> temp = this.front; temp != null; temp = temp.next){

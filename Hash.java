@@ -69,6 +69,7 @@ public class Hash implements HashInterface{
    * Returns the string version of a hash object with 
    * @return the hash object
    */
+  @Override
   public String toString(){
     return byteToHex(this.data);
   } // toString()

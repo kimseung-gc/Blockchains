@@ -106,6 +106,7 @@ public class Block implements BlockInterface{
   /**
    * @return the String version of the block
    */
+  @Override
   public String toString(){
     String ret = String.format("Block %d (Amount: %d, Nonce: %d, prevHash: %s, hash: %s)", this.getNum(), this.getAmount(), this.getNonce(), this.toStrPrev(), this.getHash().toString());
     return ret;
