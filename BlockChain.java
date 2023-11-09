@@ -21,6 +21,10 @@ public class BlockChain implements BlockChainInterface{
   Node<Block> front;
   /* Last node */
   Node<Block> last;
+
+  // +--------------+------------------------------------------------------
+  // | Constructors |
+  // +--------------+
   /**
    * Creates a block chain with front node and last node.
    * @param initial
