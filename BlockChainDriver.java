@@ -26,7 +26,7 @@ public class BlockChainDriver {
     } catch (Exception e) {
       commonMethods.printErr("Invalid Initial Value! : ", e);
       return;
-    }
+    } // try/catch
     BlockChain blockChain = new BlockChain(initial);
     /* Initializing scanner */
     Scanner scanner = new Scanner(System.in);
@@ -96,7 +96,6 @@ public class BlockChainDriver {
       } // switch case
       commonMethods.printBlockChain(blockChain);
     } while (!inp.equals("quit")); // do/while
-    //
     scanner.close();
   } // main (String[])
 } // BlockChainDriver
