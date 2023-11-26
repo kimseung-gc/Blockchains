@@ -1,6 +1,10 @@
 import java.io.PrintWriter;
 import java.util.Scanner;
 
+import Util.Block;
+import Util.BlockChain;
+import Util.BlockChainDriverUtil;
+
 /**
  * Interactive program that creates block chain based on the compilation arguments.
  * 
@@ -14,7 +18,7 @@ public class BlockChainDriver {
     /* Printing streams */
     PrintWriter pen = new PrintWriter(System.out);
     PrintWriter penErr = new PrintWriter(System.err);
-    BlockChainDriverCommonMethods commonMethods = new BlockChainDriverCommonMethods(pen, penErr);
+    BlockChainDriverUtil commonMethods = new BlockChainDriverUtil(pen, penErr);
     /* Initial block chain mined depending on the input amount */
     int initial = -1;
     try {

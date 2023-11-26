@@ -1,3 +1,4 @@
+package Util;
 
 /**
  * Generic nodes for linked structures. Nodes are not encapsulated;

@@ -1,3 +1,4 @@
+package Util;
 import java.io.PrintWriter;
 
 /**
@@ -5,7 +6,7 @@ import java.io.PrintWriter;
  * @author Seunghyeon (Hyeon) Kim
  * @class BlockChainDriverCommonMethods
  */
-public class BlockChainDriverCommonMethods {
+public class BlockChainDriverUtil {
   // +--------+------------------------------------------------------------
   // | Fields |
   // +--------+
@@ -22,7 +23,7 @@ public class BlockChainDriverCommonMethods {
    * @param pen
    * @param penErr
    */
-  public BlockChainDriverCommonMethods(PrintWriter pen, PrintWriter penErr){
+  public BlockChainDriverUtil(PrintWriter pen, PrintWriter penErr){
     /* Normal PrintWriter */
     this.pen = pen;
     /* Error PrintWriter */
