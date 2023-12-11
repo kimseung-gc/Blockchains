@@ -13,15 +13,25 @@ public class Block implements BlockInterface{
   // +--------+------------------------------------------------------------
   // | Fields |
   // +--------+
-  /* number of the block */
+  /**
+   * number of the block 
+   */
   int num;
-  /* amount transferred */
+  /** 
+   * amount transferred 
+   */
   int amount;
-  /* Previous hash */
+  /** 
+   * Previous hash 
+   */
   Hash prevHash;
-  /* Nonce of this block */
+  /**
+   * Nonce of this block 
+   */
   long nonce;
-  /* Hash of the current block */
+  /** 
+   * Hash of the current block 
+   */
   Hash currentHash;
 
   // +--------------+------------------------------------------------------
@@ -42,7 +52,7 @@ public class Block implements BlockInterface{
     MessageDigest md = MessageDigest.getInstance("sha-256");
     Hash temp = generate(md,t);
     while(!temp.isValid()){
-      /* Iterate through t until the generated hash is valid. */
+      // Iterate through t until the generated hash is valid.
       temp = generate(md,++t);
     } // while
     this.currentHash = temp;

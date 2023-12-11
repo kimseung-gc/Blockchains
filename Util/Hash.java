@@ -49,18 +49,18 @@ public class Hash implements HashInterface{
    * @return whether the hash is valid 
    */
   public boolean isValid(){
-    /* Checks if the length is valid */
+    // Checks if the length is valid
     if(this.data.length >= 3){
-      /* Checks if first three lengths are valid */
+      // Checks if first three lengths are valid
       for(int i = 0; i < 3; i++){
-        /* if 0, continue the loop */
+        // if 0, continue the loop
         if(this.data[i] == 0){
           continue;
         } // if
-        /* Otherwise, return false */
+        // Otherwise, return false 
         return false;
       } // for
-      /* When going through the loop successfully, return true. */
+      // When going through the loop successfully, return true.
       return true;
     } // if
     return false;
